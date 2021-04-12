@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Incription Admin</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<form action="../php/admin.php" method="get" onSubmit="return validation(this)">
+		  <div class="form-group">
+			<label for="nom">Nom :</label>
+			<input type="text" class="form-control" name="nom"  placeholder="Entrez votre nom" >
+		  </div>
+		  <div class="form-group">
+			<label for="prenom">Prénom :</label>
+			<input type="text" class="form-control" name="prenom"  placeholder="Entrez votre prénom" >
+		  </div>
+		  <div class="form-group">
+			<label for="mail">Adresse mail :</label>
+			<input type="email" class="form-control" name="mail"  placeholder="Entrez votre mail" >
+		  </div>
+		  <div class="form-group">
+			<label for="mdp">Mot de passe :</label>
+			<input type="password" class="form-control" name="mdp" placeholder="Entrez votre mot de passe" >
+		  </div>
+		  <div class="form-group">
+			<label for="conf_mdp">Confirmation du mot de passe :</label>
+			<input type="password" class="form-control" name="conf_mdp" placeholder="Entrez votre mot de passe" >
+		  </div>
+		  <button type="submit" class="btn btn-primary" name="admin" value="1" >Soumettre</button>
+		  <button type="button" class="btn btn-primary" value="Retour" onClick="javascript:document.location.href='connexion.html'">Annuler</button>
+		</form>
+	</body>
+</html>

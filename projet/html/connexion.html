@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<title>Connexion</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+		<form action="../php/authent.php" method="get">
+			<div class="form-group">
+			<label for="form-login">Login :</label>
+			<input name="login" id="form-login" type="text" size="25" required /><br />
+			</div>
+			<div class="form-group">
+				<label for="form-nom">PWD :</label>
+				<input name="PWD" id="form-mdp" type="password" size="25"required /><br />
+			</div>
+			<input class="btn btn-primary" type="submit" name="envoyer" value="Connexion" />
+		</form>
+	<button class="btn btn-primary" type="button" name="BEntreprise" onClick="javascript:document.location.href='Inscription_entreprise.html'" />Inscription Entreprise</button>
+	<button class="btn btn-primary" type="button" name="BMembre" onClick="javascript:document.location.href='Inscription_membre.html'">Inscription Membre</button>
+	<button class="btn btn-primary" type="button" name="BEntreprise" onClick="javascript:document.location.href='inscription_admin.html'" />Inscription Admin</button>
+	<button class="btn btn-primary" type="button" name="Retour" onClick="javascript:document.location.href='index.php'">Retour</button>
+</html>
